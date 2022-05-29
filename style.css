@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:sans-serif
+}
+section {
+    background-image: url(img/البحار.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+section .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .text h1{
+    font-size: 40px;
+    color: aqua;
+    margin: 20px;
+}
+section .text img{
+    width: 100px;
+    height: 60px;
+    padding-top: 10px;
+}
+section .btn {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 50px;
+}
+.btn1, .btn2{
+    padding: 10px 20px;
+    background-color: transparent;
+    color: white;
+    font-size: 40px;
+    border: 2px solid rgb(42, 42, 255);
+    animation: btnan 5s infinite;
+    cursor: pointer;
+}
+
+
+@keyframes btnan {
+    0%{
+        border-radius: 10px;
+    }
+    50%{
+        border-radius: 30px;
+        padding: 20px 30px;
+    }
+    100%{
+        border-radius: 10px;
+    }
+
+}
+
+section .text {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+section .text p {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    background-color: transparent;
+}
+
+
+
+@keyframes btnan {
+    0%{
+        border-radius: 10px;
+    }
+    50%{
+        border-radius: 30px;
+        padding: 20px 30px;
+    }
+    100%{
+        border-radius: 10px;
+    }
+
+}
+
+
+section .bubbls{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    bottom: 10px;
+    position: fixed;
+}
+
+section .bubbls img{
+    width: 100px;
+    height: 100px;
+    animation: bubble 5s infinite;
+
+}
+
+.bubbls img #img1{
+    width: 50px;
+    height: 50px;
+    animation: bubble 10s infinite;
+
+}
+section .bubbls #img2{
+    width: 100px;
+    height: 100px;
+    animation: bubble 8s infinite;
+
+}
+section .bubbls #img3{
+    width: 80px;
+    height: 80px;
+    animation: bubble 12s infinite;
+
+}
+section .bubbls #img4{
+    width: 110px;
+    height: 110px;
+    animation: bubble 5s infinite;
+
+
+}
+section .bubbls #img5{
+    width: 100px;
+    height: 100px;
+    animation: bubble 9s infinite;
+
+
+}
+section .bubbls #img6{
+    width: 50px;
+    height: 50px;
+    animation: bubble 7s infinite;
+
+}
+
+@keyframes bubble {
+    0% {
+        transform: translate(0, 0);
+    }   
+    100% {
+        transform: translate(0, -540px);
+        opacity: 0;
+    } 
+    }
